@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+    <script src="javascript/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Final Project - Dice Wars</h1>
+        <h2>By Keneth Fuentes</h2>
+    </header>
+    <section class="main">
+        <section class="graphics">
+            <h3 class="round">Round <span id="round"></span></h3>
+            <p class="winner"></p>
+        </section>
+        <section class="player player1">
+            <div class="score">
+                <h3>Player</h3>
+                <p class="score">Score: <span id="scoreP1"></span></p>
+            </div>
+            <div class="dices">
+                <img src="images/perspective-dice-six-faces-one.svg" alt="player's dice">
+                <img src="images/perspective-dice-six-faces-six.svg" alt="player's dice">
+                <span class="roundScore" id="roundScore1"></span>
+            </div>
+            <div class="button">
+                <input id="rollBtn" type="button" value="Roll" onclick="playRound()">
+                <input type="button" value="Reset" onclick="reset()">
+            </div>
+        </section>
+        <section class="player player2">
+            <div class="score">
+                <h3>Computer</h3>
+                <p class="score">Score: <span id="scoreP2"></span></p>
+            </div>
+            <div class="dices">
+                <img src="images/perspective-dice-six-faces-four.svg" alt="computer's dice">
+                <img src="images/perspective-dice-six-faces-three.svg" alt="computer's dice">
+                <span class="roundScore" id="roundScore2"></span>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <p>Copyright 2024 | Keneth Fuentes | COMP 2132</p>
+    </footer>
+</body>
+</html>

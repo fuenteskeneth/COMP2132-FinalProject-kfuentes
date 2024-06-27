@@ -1,0 +1,70 @@
+html {
+  font: 100% "Radio Canada Big", sans-serif;
+  color: black;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+body header {
+  background-color: #032a61;
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  box-shadow: 0px 3px 5px rgb(128, 123, 123);
+}
+body footer {
+  margin-top: auto;
+  background-color: #b7a070;
+  color: black;
+  padding: 10px;
+  margin: 0px;
+  box-shadow: 0px -3px 5px rgb(113, 109, 109);
+}
+body .dices {
+  display: flex;
+  align-items: center;
+}
+body .dices img {
+  width: 100px;
+  height: 100px;
+}
+body .main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+}
+body .graphics {
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+body .player1 {
+  grid-area: 2/1/3/2;
+}
+body .player2 {
+  grid-area: 2/2/3/3;
+}
+body .player {
+  border: 1px solid black;
+}
+body .roundScore {
+  font-size: 100px;
+}
+body .winner {
+  font-size: 80px;
+}
+body .score {
+  font-weight: bold;
+}
+body .score h3 {
+  color: black;
+  font-size: larger;
+}
+
+/*# sourceMappingURL=styles.css.map */
